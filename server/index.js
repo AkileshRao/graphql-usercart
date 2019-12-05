@@ -2,6 +2,7 @@ const { ApolloServer } = require('apollo-server');
 const typeDefs = require('./schema');
 const mongoose = require('mongoose');
 const resolvers = require('./resolvers/mainResolver');
+const SECRET = 'Testgraphqlsecret';
 
 const server = new ApolloServer({
   typeDefs,
